@@ -4,3 +4,12 @@ expectations:
   population_size: 1000
 
 actions:
+  missing_dmd_id_counts:
+    run: >
+      sqlrunner:latest
+        analysis/missing_dmd_id_counts.sql
+        --output output/missing_dmd_id_counts.csv
+        --dummy-data-file analysis/medication_counts.dummy.csv
+    outputs:
+      moderately_sensitive:
+        missing_dmd_id_counts: output/missing_dmd_id_counts.csv
