@@ -25,8 +25,7 @@
             d.MultilexDrug_ID,
             d.dmd_id,
             d.FullName,
-            year(i.ConsultationDate),
-            datepart(q,i.ConsultationDate)
+            year(i.ConsultationDate)
     )
 
 select
