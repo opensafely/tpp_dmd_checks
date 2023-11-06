@@ -20,6 +20,7 @@
                 WHERE c.MultilexDrug_ID = d.MultilexDrug_ID
             )
             AND year(i.ConsultationDate)>=2018
+            AND IssueCount >= 500
         GROUP BY
             d.MultilexDrug_ID,
             d.dmd_id,
