@@ -32,4 +32,4 @@ select
     FullName,
     cast(CASE WHEN IssueCount=0 THEN 0 ELSE (CEILING(IssueCount/6)*6) - 3 END as int) as IssueCount_midpoint6
 from cte
-order by 1,2,3,4,5
+order by 1,2,3,4
