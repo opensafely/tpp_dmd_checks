@@ -1,4 +1,4 @@
--- Internal project for data curation, no need for PatientsWithTypeOneDissent
+-- Internal project for data curation, no need for AllowedPatientsWithTypeOneDissent
 
 ;with
     cte
